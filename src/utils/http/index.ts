@@ -17,7 +17,7 @@ import router from "@/router";
 
 // 相关配置请参考：www.axios-js.com/zh-cn/docs/#axios-request-config-1
 const defaultConfig: AxiosRequestConfig = {
-  baseURL: "http://127.0.0.1:8848",
+  baseURL: "http://129.28.153.89:8848",
   // 请求超时时间
   timeout: 10000,
   headers: {
