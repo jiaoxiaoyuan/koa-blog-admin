@@ -1,39 +1,145 @@
-#  koa-blog-admin
+<p align="center">
+  <a href="http://39.108.51.116/#/login" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://img.shields.io/badge/%E5%B0%8F%E5%BC%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%90%8E%E5%8F%B0-v1.0.0-lightgrey" alt="Blog logo">
+  </a>
+</p>
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+<p align="center">
+  <img src="https://img.shields.io/badge/pnpm-v7.26.3-purple" alt="pnpm version">
+  <a href="https://nodejs.org/en/about/releases/">
+    <img src="https://img.shields.io/badge/node-v16.17.0-green" alt="node compatibility">
+  </a>
+  <a href="https://element-plus.gitee.io/zh-CN/">
+    <img src="https://img.shields.io/badge/ElementPlus-v2.2.17-blue" alt="Element Plus">
+  </a>
+  <a href="https://cn.vuejs.org/">
+    <img src="https://img.shields.io/badge/vue-v3.2.45-brightgreen" alt="Vue.js">
+  </a>
+  <a href="https://imzbf.github.io/md-editor-v3/docs#%F0%9F%A7%B1%20toolbarsExclude">
+    <img src="https://img.shields.io/badge/md--editor--v3-v2.7.2-lightgrey" alt="md-editor-v3">
+  </a>
+  <a href="https://pinia.web3doc.top/">
+    <img src="https://img.shields.io/badge/pinia-v2.0.28-yellowgreen" alt="pinia">
+  </a>
+  <a href="https://router.vuejs.org/zh/guide/">
+    <img src="https://img.shields.io/badge/vue--router-v4.1.6-green" alt="vue-router">
+  </a>
+  <a href="http://yiming_chang.gitee.io/pure-admin-doc/">
+    <img src="https://img.shields.io/badge/pureadmin-v1.1.0-purple" alt="vue-router">
+  </a>
+  <a href="[http://yiming_chang.gitee.io/pure-admin-doc/](https://vueuse.org/)">
+    <img src="https://img.shields.io/badge/vueuse-v9.6.0-pink" alt="vue-use">
+  </a>
+  <a href="https://www.axios-http.cn/docs/intro">
+    <img src="https://img.shields.io/badge/axios-v%5E1.2.0-blueviolet" alt="axios">
+  </a>
+  <a href="https://www.dowebok.com/demo/2014/98/">
+    <img src="https://img.shields.io/badge/animate-v%5E4.1.1-orange" alt="animate">
+  </a>
+</p>
 
-#### 软件架构
-软件架构说明
+## ⚡ 简介 introduction
 
+一个前后端分离的个人博客项目
 
-#### 安装教程
+已适配移动端、PC端，适合新手用于学习。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 前台：
 
-#### 使用说明
+博客前台基于 vue3、element plus、pinia、axios、vue-router、vue-cli、vue-use、npm、scss 等主流技术
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+前台线上预览地址：http://mrzym.top
 
-#### 参与贡献
+gitee 仓库地址：https://gitee.com/mrzym/blog-v3
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### 管理后台：
 
+博客管理后台基于 pureadmin、vue3、element plus、pinia、axios、vue-router、vue-use、pnpm、vite、sass、tailwindcss 等主流技术
 
-#### 特技
+后台线上预览地址：http://mrzym.top/admin
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+gitee 仓库地址： https://gitee.com/mrzym/blog-v3-admin
+
+测试账户: test
+
+密码: test123
+
+也可以自行注册用户
+
+#### 后端：
+
+博客后端基于 node.js、koa、koa-router、koa-body、seqlize、mysql、qiniu(七牛云对象存储)、bcryptjs、nodemon 等主流技术
+
+gitee 仓库地址：https://gitee.com/mrzym/blogServer
+
+## 🚀 博客后台管理系统下载运行
+
+```git
+# pnpm 版本 v7.26.3
+# node 版本 v16.17.0
+
+1、下载项目
+git clone https://gitee.com/mrzym/blog-v3-admin.git
+tips: 也可以下载zip打开，这样不会和我的仓库关联，也可以自己去解除关联
+2、打开项目，安装依赖
+pnpm i
+3、运行项目
+pnpm run serve
+```
+
+## ✔️ 预览
+
+#### 功能总览
+
+| 模块         | 功能                                         |
+| ------------ | -------------------------------------------- |
+| 首页         | 代码热力图、博客数据展示                     |
+| 文章管理     | 文章新增、编辑、删除、置顶、公开、私密、搜索 |
+| 用户管理     | 编辑用户角色、用户信息                       |
+| 标签管理     | 标签新增、编辑、删除                         |
+| 分类管理     | 分类新增、编辑、删除                         |
+| 相册管理     | 相册新增、编辑、删除                         |
+| 相册详情管理 | 相册内的图片新增、删除、恢复                 |
+| 博客信息管理 | 博客信息编辑(博客公告、博主信息、博客名称等) |
+
+#### 首页
+
+#### 文章管理
+
+#### 文章新增/编辑
+
+#### 用户管理
+
+#### 标签管理
+
+#### 分类管理
+
+#### 相册管理
+
+#### 博客信息管理
+
+## 🛫 期待
+
+#### 功能开发
+
+目前只是想尽快发布项目到线上，熟悉一下整个项目的开发流程，开发的功能还不是很多（博客前台都是一点一点的照着之前自己魔改的hexo博客手敲的，花了好多的时间）。
+
+后续会开发在线音乐播放器、留言、友链等
+
+优化项目的动画
+
+尝试一些新技术，比如：tailwind.css。博客前台是一个一个类堆出来的，不仅很长还不好看，当时在写的时候也没有考虑那么多。
+
+其实评论功能在开发的时候组件都写好了，但是某天刷到一些个人博客网站不能开评论功能的问题，所以就没有进行开发，目前主要是开发了一些自己觉得必要且实用的功能，会尽快开发在线音乐播放器、留言功能，主要是因为自己喜欢听歌。
+
+## 🌈 部署
+
+博客文章会出一系列的部署教程
+
+教程地址：http://mrzym.top/#/articleList?id=2&type=category&name=%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2
+
+## 🥰 感谢
+
+感谢我所使用的这些技术框架的开发者、维护者，每一个框架、库的开发，都需要长时间的技术沉淀，充分的思考与不断地踩坑。维护开源库所需要花费的时间和精力更是常人所难以想象的。
+
+如果大家喜欢这个项目的话，麻烦大家点个 star、fork，你们的鼓励是我最大的动力。
