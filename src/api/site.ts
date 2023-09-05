@@ -97,6 +97,7 @@ export const mdImgUpload = async data => {
   }
   const formData = new FormData();
   formData.append("file", res);
+  formData.append("key", "7c63b59c638aa4a9e98144d9d929c18e");
   const token = getToken();
 
   return new Promise<SiteResult>(resolve => {
