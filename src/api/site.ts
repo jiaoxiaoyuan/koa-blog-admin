@@ -97,7 +97,7 @@ export const mdImgUpload = async data => {
   }
   const formData = new FormData();
   formData.append("file", res);
-  // const token = getToken();
+  const token = getToken();
 
   return new Promise<SiteResult>(resolve => {
     Axios({
