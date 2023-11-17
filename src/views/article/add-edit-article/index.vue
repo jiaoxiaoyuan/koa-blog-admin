@@ -146,6 +146,7 @@ const {
             />
           </el-select>
         </el-form-item>
+
         <el-form-item
           class="form-item100 article-cover"
           label="文章缩略图"
@@ -158,6 +159,7 @@ const {
             :limit="1"
           />
         </el-form-item>
+
         <el-form-item class="form-item100" label="置顶">
           <el-switch
             v-model="articleForm.is_top"

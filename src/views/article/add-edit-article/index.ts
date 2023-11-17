@@ -33,12 +33,19 @@ export function useArticle() {
     tagList: [],
     author_id: 0,
     article_content: "",
-    article_cover: "",
+    article_cover:
+      "https://img.mtswk.cn/LightPicture/2023/11/87beddebe71ea84b.png",
     is_top: 2, // 置顶 1 置顶 2 取消置顶
     status: 1, // 状态 1 公开 2 私密 3 回收站（相当于草稿）
     type: 1, // 类型 1 原创 2 翻译 3 转载
     origin_url: "", // 原文链接 翻译或转载才需要填
-    coverList: [],
+    coverList: [
+      {
+        id: 1,
+        name: "87beddebe71ea84b.png",
+        url: "https://img.mtswk.cn/LightPicture/2023/11/87beddebe71ea84b.png"
+      }
+    ],
     article_description: "" // 文章描述
   });
 
@@ -221,7 +228,16 @@ export function useArticle() {
         let res;
         if (!finalArticle.id) {
           // 新增
-          res = await addArticle({ article: finalArticle });
+          // res = await addArticle({ article: finalArticle });
+
+          console.log(finalArticle.article_cover);
+          // "https://img.mtswk.cn/LightPicture/2023/11/87beddebe71ea84b.png"
+          res = await addArticle({
+            article: {
+              ...finalArticle,
+              article_cover: finalArticle.article_cover
+            }
+          });
         } else {
           // 编辑
           res = await editArticle({ article: finalArticle });
