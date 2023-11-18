@@ -58,7 +58,7 @@ export const imgUpload = async data => {
     Axios({
       method: "post",
       // url: "http://127.0.0.1:8848/upload/img",
-      url: "https://img.mtswk.cn/api/upload",
+      url: "https://img.mtsws.cn/api/upload",
       data: formData,
       headers: {
         "Content-Type": "multipart/form-data",
@@ -103,7 +103,7 @@ export const mdImgUpload = async data => {
   return new Promise<SiteResult>(resolve => {
     Axios({
       method: "post",
-      url: "https://img.mtswk.cn/api/upload",
+      url: "https://img.mtsws.cn/api/upload",
       data: formData,
       headers: {
         "Content-Type": "multipart/form-data",
