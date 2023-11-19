@@ -51,7 +51,8 @@ export const imgUpload = async data => {
   }
   const formData = new FormData();
   formData.append("file", res);
-  formData.append("key", "7c63b59c638aa4a9e98144d9d929c18e");
+  // formData.append("key", "7c63b59c638aa4a9e98144d9d929c18e");
+  formData.append("key", "2ea418ae6f4174b5f9c4e3105cee14da");
   const token = getToken();
 
   return new Promise<SiteResult>(resolve => {
@@ -97,7 +98,8 @@ export const mdImgUpload = async data => {
   }
   const formData = new FormData();
   formData.append("file", res);
-  formData.append("key", "7c63b59c638aa4a9e98144d9d929c18e");
+  // formData.append("key", "7c63b59c638aa4a9e98144d9d929c18e");
+  formData.append("key", "2ea418ae6f4174b5f9c4e3105cee14da");
   const token = getToken();
 
   return new Promise<SiteResult>(resolve => {
